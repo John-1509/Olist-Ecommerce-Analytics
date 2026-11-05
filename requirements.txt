@@ -1,0 +1,2 @@
+# Optional Python exploration scripts; SQL and Power BI do not require Python.
+pandas==3.1.0

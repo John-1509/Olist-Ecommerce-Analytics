@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pgpass
+pgpass.conf
+*.log
+*.tmp
+*.bak
+*.dump
+*.backup
+*.zip
+/data/raw/*.csv
+/.pbi/
+**/.pbi/

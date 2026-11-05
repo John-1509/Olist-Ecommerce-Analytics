@@ -1,0 +1,81 @@
+BEGIN
+ orders | delivered | delivered_missing_actual | delivered_missing_estimate | actual_before_purchase | carrier_before_purchase | actual_before_carrier | approved_before_purchase 
+--------+-----------+--------------------------+----------------------------+------------------------+-------------------------+-----------------------+--------------------------
+  99441 |     96478 |                        8 |                          0 |                      0 |                     166 |                    23 |                        0
+(1 row)
+
+ delivery_result | orders | min_days | max_days 
+-----------------+--------+----------+----------
+ early           |  88644 |     -147 |       -1
+ late            |   6534 |        1 |      188
+ on_time         |   1292 |        0 |        0
+(3 rows)
+
+ delivered_on_estimated_day_with_nonmidnight_time 
+--------------------------------------------------
+                                             1292
+(1 row)
+
+ reviews | distinct_review_ids | reviewed_orders | invalid_scores | answer_before_creation 
+---------+---------------------+-----------------+----------------+------------------------
+   99224 |               98410 |           98673 |              0 |                      0
+(1 row)
+
+ orders_with_multiple_reviews | max_reviews_per_order 
+------------------------------+-----------------------
+                          547 |                     3
+(1 row)
+
+ exact_duplicate_groups | extra_identical_rows 
+------------------------+----------------------
+                      0 |                    0
+(1 row)
+
+ orders_with_latest_timestamp_ties | tied_orders_with_conflicting_scores 
+-----------------------------------+-------------------------------------
+                                 0 |                                   0
+(1 row)
+
+ order_status | orders | without_items | multi_seller_orders 
+--------------+--------+---------------+---------------------
+ approved     |      2 |             0 |                   0
+ canceled     |    625 |           164 |                   0
+ created      |      5 |             5 |                   0
+ delivered    |  96478 |             0 |                1275
+ invoiced     |    314 |             2 |                   0
+ processing   |    301 |             0 |                   0
+ shipped      |   1107 |             1 |                   2
+ unavailable  |    609 |           603 |                   1
+(8 rows)
+
+ missing_or_nonpositive_price | invalid_freight | min_price | max_price | max_freight | missing_join_keys 
+------------------------------+-----------------+-----------+-----------+-------------+-------------------
+                            0 |               0 |      0.85 |   6735.00 |      409.68 |                 0
+(1 row)
+
+ zero_payment_rows | invalid_payment_rows | zero_installment_rows | min_payment | max_payment 
+-------------------+----------------------+-----------------------+-------------+-------------
+                 9 |                    0 |                     2 |        0.00 |    13664.08
+(1 row)
+
+ orders_with_both | difference_over_one_cent | largest_difference 
+------------------+--------------------------+--------------------
+            98665 |                      303 |             182.81
+(1 row)
+
+ order_status | orders_without_payments 
+--------------+-------------------------
+ delivered    |                       1
+(1 row)
+
+ products_without_category | products_without_translation 
+---------------------------+------------------------------
+                       610 |                           13
+(1 row)
+
+ geolocation_rows | zip_prefixes | invalid_global_coordinates | outside_rough_brazil_box 
+------------------+--------------+----------------------------+--------------------------
+          1000163 |        19015 |                          0 |                       31
+(1 row)
+
+COMMIT

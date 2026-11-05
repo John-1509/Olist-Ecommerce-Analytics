@@ -1,0 +1,25 @@
+{
+ "name":"Olist | Teal & Ink",
+ "dataColors":["#087F8C","#E69B36","#334E68","#B44B5A","#64B6AC","#8795A5"],
+ "background":"#FFFFFF","foreground":"#182D40","tableAccent":"#087F8C",
+ "good":"#087F8C","neutral":"#E69B36","bad":"#B44B5A",
+ "textClasses":{
+  "callout":{"fontFace":"Segoe UI Semibold","fontSize":36,"color":"#182D40"},
+  "title":{"fontFace":"Segoe UI Semibold","fontSize":22,"color":"#182D40"},
+  "header":{"fontFace":"Segoe UI Semibold","fontSize":16,"color":"#182D40"},
+  "label":{"fontFace":"Segoe UI","fontSize":16,"color":"#334E68"}
+ },
+ "visualStyles":{
+  "*":{"*":{
+   "title":[{"fontSize":22,"fontFamily":"Segoe UI Semibold","color":{"solid":{"color":"#182D40"}}}],
+   "background":[{"color":{"solid":{"color":"#FFFFFF"}},"transparency":0}],
+   "border":[{"show":true,"color":{"solid":{"color":"#DCE5EA"}},"radius":8}]
+  }},
+  "tableEx":{"*":{
+   "values":[{"fontSize":18}],
+   "columnHeaders":[{"fontSize":16,"fontColor":{"solid":{"color":"#FFFFFF"}},"backColor":{"solid":{"color":"#182D40"}}}],
+   "total":[{"totals":false}]
+  }},
+  "page":{"*":{"background":[{"color":{"solid":{"color":"#F2F5F7"}},"transparency":0}]}}
+ }
+}
